@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 900px;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+}
+
+header {
+    width: 900px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_kakao {
+    color: white;
+    font-size: 30px;
+}
+
+section {
+    width: 900px;
+    height: 400px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+}
+
+#login_box {
+    width: 500px;
+    height: 400px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#username_id > input,
+#password_id > input {
+    width: 400px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+#password_id > input:focus {
+    border-bottom: 2px solid black;
+}
+
+#login_box > #checkbox_id {
+    display: flex;
+    justify-content: left;
+    width: 400px;
+    color: gray;
+}
+
+#login_box > #checkbox_id > span {
+    margin-left: 5px;
+}
+
+#button_box {
+    display: flex;
+    flex-direction: column;
+}
+
+#span_tags {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* 로그인 */
+#button_box > button:nth-child(1) {
+    width: 400px;
+    height: 40px;
+    display: block;
+    background-color: yellow;
+    border: none;
+}
+
+/* 또는 */
+#span_tags > #span_txt {
+    color: gray;
+    font-size: 12px;
+    border: none;
+    margin: auto;
+}
+
+#span_tags > #span_line > hr {
+    width: 180px;
+}
+
+/* QR코드 로그인 */
+#button_box > button:nth-child(3) {
+    width: 400px;
+    height: 40px;
+    display: block;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    border: none;
+}
+
+#login_box > #a_tags {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    font-size: 12px;
+}
+
+#auth_id {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 0px;
+}
+
+#login_box > #a_tags > a:nth-child(2),
+#login_box > #a_tags > a:nth-child(3) {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+footer {
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer_tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* 한국어 */
+.lang_menu {
+    width: 50px;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#lang_menu_button {
+    width: 50px;
+    height: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 12px;
+}
+
+.lang_menu > li {
+    background-color: rgb(75, 75, 75);
+    font-size: small;
+}
+
+#lang_menu_button:hover {
+    cursor: pointer;
+}
+
+/* footer - a태그들 */
+#footer_a_tags > a {
+    color: white;
+    text-decoration: none;
+}

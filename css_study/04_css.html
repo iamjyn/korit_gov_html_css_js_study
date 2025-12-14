@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button 스타일</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #button_id {
+            padding: 10px 30px;
+            font-size: 20px;
+            color: green;
+            background-color: transparent;
+            border: none;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            /* transition: background-color 0.5s ease; */
+            
+        }
+
+        #button_id:hover {
+            background-color: pink;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        #button_id:active {
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="button_id">버튼</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 자식 선택자</title>
+        <style>
+            #container {
+                border: 1px solid black;
+                padding: 20px;
+                border-radius: 15px;
+                background-color: beige;
+            }
+
+            #container > p > span {
+                font-size: 18px;
+                color: orange;
+            }
+
+            #container > p:nth-child(2) {
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            #container > p:nth-child(3), p:nth-child(4) {
+                color: rgb(1, 147, 98);
+                ;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>자식 선택자</h3>
+        <div id="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                atque placeat ipsam quo modi,
+                <span>nemo facere nostrum,</span> cum corporis veniam dolorum,
+                tenetur facilis animi voluptatem molestias obcaecati dicta
+                excepturi laboriosam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis quibusdam debitis exercitationem obcaecati animi
+                tempora, perferendis repudiandae pariatur sunt corporis nostrum
+                quisquam vel veniam quidem officiis dignissimos voluptatem
+                laborum fugiat!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis quibusdam debitis exercitationem obcaecati animi
+                tempora, perferendis repudiandae pariatur sunt corporis nostrum
+                quisquam vel veniam quidem officiis dignissimos voluptatem
+                laborum fugiat!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis quibusdam debitis exercitationem obcaecati animi
+                tempora, perferendis repudiandae pariatur sunt corporis nostrum
+                quisquam vel veniam quidem officiis dignissimos voluptatem
+                laborum fugiat!
+            </p>
+        </div>
+    </body>
+</html>
