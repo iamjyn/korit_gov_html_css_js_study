@@ -4,16 +4,16 @@
 // 비동기 콜백
 // 비동기 작업이 완료된 후에 호출되는 콜백함수
 
-// function getData(callback) {
-//     setTimeout(() => {
-//         console.log("서버에서 데이터 받아옴");
-//         callback({ name: "홍길동" });
-//     }, 2000);
-// }
+function getData(callback) {
+    setTimeout(() => {
+        console.log("서버에서 데이터 받아옴");
+        callback({ name: "홍길동" });
+    }, 2000);
+}
 
-// getData((data) => {
-//     console.log(data);
-// });
+getData((data) => {
+    console.log(data);
+});
 
 // 쇼핑몰
 // 로그인
